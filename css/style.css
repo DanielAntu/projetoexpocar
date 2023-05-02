@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+* {
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hide {
+    display: none !important;
+}
+
+:root {
+    --color1: #ff4a4a;
+    --color2: #ebe8e8;
+    --color3: #615c5c;
+}
+
+#navbar {
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    border-bottom: 1px solid #615c5c;
+}
+
+#navbar .bi-three-dots-vertical {
+    position: absolute;
+    right: 8px;
+    top: 16px;
+    font-size: 1.5rem;
+}
+
+#navbar h1 {
+    margin-bottom: 1rem;
+    color: #615c5c;
+}
+
+#navbar h1 i {
+    color: var(--color1);
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar li {
+    padding: 0.5rem;
+    border-bottom: 1px solid var(--color1);
+}
+
+#navbar a {
+    text-decoration: none;
+    color: var(--color3);
+    font-weight: bold;
+    transition: 0.5s;
+    display: block;
+    padding: 0.5rem;
+}
+
+#navbar .active {
+    background-color: var(--color3);
+    color: var(--color2) !important;
+}
