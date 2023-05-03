@@ -17,6 +17,8 @@
     --color3: #615c5c;
 }
 
+/* NAVBAR */
+
 #navbar {
     text-align: center;
     padding: 1em;
@@ -61,6 +63,35 @@
 }
 
 #navbar .active {
-    background-color: var(--color3);
-    color: var(--color2) !important;
+    color: var(--color1) !important;
+}
+
+@media (min-width: 768px) {
+    /* Navbar */
+    #navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5em;
+    }
+
+    #navbar h1 {
+        font-size: 30px;
+    }
+
+    #navbar .bi-three-dots-vertical {
+        display: none;
+    }
+
+    #navbar ul {
+        flex-direction: row;
+    }
+
+    #navbar ul li {
+        border-bottom: none;
+    }
+
+    #navbar ul li a {
+        font-size: 19px;
+    }
 }
