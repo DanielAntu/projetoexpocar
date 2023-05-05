@@ -18,7 +18,6 @@
 }
 
 /* NAVBAR */
-
 #navbar {
     text-align: center;
     padding: 1em;
@@ -38,7 +37,8 @@
     color: #615c5c;
 }
 
-#navbar h1 i {
+#navbar h1 i,
+footer h1 i {
     color: var(--color1);
 }
 
@@ -64,6 +64,86 @@
 
 #navbar .active {
     color: var(--color1) !important;
+}
+
+/* Main */
+main {
+    min-height: 70vh;
+}
+
+/* BANNER */
+main .banner {
+    display: block;
+    background-image: url(../img/bg.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-width: 100%;
+    max-height: 300px;
+    position: relative;
+}
+
+.fade {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #cccccc48;
+}
+
+.fade h3 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    text-shadow: 1px 1px #757373;
+}
+
+/* ATTRACTION */
+.attraction {
+    display: flex;
+    flex-direction: column;
+    margin: 1em auto;
+    max-width: 1200px;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 1em;
+    padding: 1em;
+    border: 1px solid var(--color3);
+}
+
+.card img {
+    width: 100%;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    background-color: var(--color3);
+    color: #fff;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer h1 {
+    font-size: 25px;
+    margin-bottom: 1em;
+}
+
+footer p {
+    margin-bottom: 1em;
+    font-size: 13px;
 }
 
 @media (min-width: 768px) {
@@ -93,5 +173,26 @@
 
     #navbar ul li a {
         font-size: 19px;
+    }
+
+    /* FOOTER */
+    footer p {
+        font-size: 16px;
+    }
+
+    /* BANNER */
+    main .banner {
+        max-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .fade h3 {
+        font-size: 30px;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 700px;
     }
 }
