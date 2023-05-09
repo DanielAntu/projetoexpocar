@@ -74,4 +74,5 @@ const verifywidth = () => {
 menubtn.addEventListener("click", () => togleMenu());
 
 // incializar
+verifywidth();
 renderCar();
